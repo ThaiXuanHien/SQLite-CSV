@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:contentPadding="5dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true"
+    app:cardBackgroundColor="@color/colorWhite"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+            android:id="@+id/profileIV"
+            app:c_border_color="@color/colorGray"
+            app:c_border="true"
+            app:c_border_width="1dp"
+            android:layout_centerVertical="true"
+            android:layout_width="80dp"
+            android:layout_height="80dp">
+
+        </com.blogspot.atifsoftwares.circularimageview.CircularImageView>
+        <LinearLayout
+
+            android:paddingLeft="10dp"
+            android:layout_toLeftOf="@id/moreBtn"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/profileIV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="@color/colorBlack"
+                android:id="@+id/nameTV"
+                android:text="Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+            <TextView
+                android:textColor="@color/colorBlack"
+                android:id="@+id/phoneTV"
+                android:text="Phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+            <TextView
+                android:textColor="@color/colorBlack"
+                android:id="@+id/emailTV"
+                android:text="Email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+            <TextView
+                android:textColor="@color/colorBlack"
+                android:id="@+id/DOBTV"
+                android:text="DOB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+        </LinearLayout>
+        <ImageButton
+
+            android:background="@null"
+            android:id="@+id/moreBtn"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_more_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </ImageButton>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
